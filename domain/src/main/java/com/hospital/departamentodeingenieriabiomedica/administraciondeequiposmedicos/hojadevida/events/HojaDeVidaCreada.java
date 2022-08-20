@@ -2,15 +2,17 @@ package com.hospital.departamentodeingenieriabiomedica.administraciondeequiposme
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmedicos.hojadevida.values.HojaDeVidaId;
+import com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmedicos.hojadevida.values.Serial;
 
 public class HojaDeVidaCreada extends DomainEvent {
-    private final HojaDeVidaId hojaDeVidaId;
+    private final Serial serial;
 
-    public HojaDeVidaCreada(HojaDeVidaId hojaDeVidaId) {
+    public HojaDeVidaCreada(Serial serial) {
         super("com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmedicos.HojaDeVidaCreada");
-        this.hojaDeVidaId = hojaDeVidaId;
+        this.serial = serial;
     }
-    public HojaDeVidaId getHojaDeVidaId() {
-        return hojaDeVidaId;
+
+    public Serial getSerial() {
+        return serial;
     }
 }

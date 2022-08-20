@@ -9,4 +9,8 @@ public class Serial implements ValueObject<String> {
         this.serial = serial;
     }
 
+    @Override
+    public String value() {
+        return serial;
+    }
 }

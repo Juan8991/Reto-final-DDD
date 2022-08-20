@@ -29,4 +29,19 @@ public class Equipo extends Entity<EquipoId> {
         this.ubicacion= Objects.requireNonNull(ubicacion);
     }
 
+    public DatosDelEquipo getDatosDelEquipo() {
+        return datosDelEquipo;
+    }
+
+    public RegistroInvima getRegistroInvima() {
+        return registroInvima;
+    }
+
+    public ClasificacionDelRiesgo getClasificacionDelRiesgo() {
+        return clasificacionDelRiesgo;
+    }
+
+    public Ubicacion getUbicacion() {
+        return ubicacion;
+    }
 }

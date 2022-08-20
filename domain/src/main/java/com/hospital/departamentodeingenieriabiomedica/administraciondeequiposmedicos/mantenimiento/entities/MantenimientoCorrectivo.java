@@ -23,8 +23,8 @@ public class MantenimientoCorrectivo extends Entity<MantenimientoCorrectivoId> {
     public void actualizarDiagnostico( Diagnostico diagnostico){
         this.diagnostico=diagnostico;
     }
-    public void actualizarDescripcionDelMantenimientoCorrectivo(FechaDelMantenimientoCorrectivo fechaDelMantenimientoCorrectivo){
-        this.fechaDelMantenimientoCorrectivo= Objects.requireNonNull(fechaDelMantenimientoCorrectivo);
+    public void actualizarDescripcionDelMantenimientoCorrectivo(DescripcionDeMantenimientoCorrectivo descripcionDeMantenimientoCorrectivo){
+        this.descripcionDeMantenimientoCorrectivo= Objects.requireNonNull(descripcionDeMantenimientoCorrectivo);
     }
 
 }

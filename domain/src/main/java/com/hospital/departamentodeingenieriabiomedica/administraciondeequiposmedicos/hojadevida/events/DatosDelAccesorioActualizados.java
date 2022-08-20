@@ -6,17 +6,12 @@ import com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmed
 import com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmedicos.hojadevida.values.HojaDeVidaId;
 
 public class DatosDelAccesorioActualizados extends DomainEvent {
-    private final AccesorioId accesorioId;
+
     private final DatosDelAccesorio datosDelAccesorio;
 
-    public DatosDelAccesorioActualizados(AccesorioId accesorioId, DatosDelAccesorio datosDelAccesorio) {
+    public DatosDelAccesorioActualizados( DatosDelAccesorio datosDelAccesorio) {
         super("com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmedicos.DatosDelAccesorioActualizados");
-        this.accesorioId = accesorioId;
         this.datosDelAccesorio = datosDelAccesorio;
-    }
-
-    public AccesorioId getAccesorioId() {
-        return accesorioId;
     }
 
     public DatosDelAccesorio getDatosDelAccesorio() {

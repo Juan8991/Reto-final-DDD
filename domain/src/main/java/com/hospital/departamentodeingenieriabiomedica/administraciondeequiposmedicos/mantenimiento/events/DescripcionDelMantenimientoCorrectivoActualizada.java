@@ -12,7 +12,6 @@ public class DescripcionDelMantenimientoCorrectivoActualizada extends DomainEven
 
     public DescripcionDelMantenimientoCorrectivoActualizada(MantenimientoCorrectivoId mantenimientoCorrectivoId, DescripcionDeMantenimientoCorrectivo descripcionDeMantenimientoCorrectivo) {
         super("com.hospital.departamentodeingenieriabiomedica.administraciondeequiposmedicos.DescripcionDelMantenimientoCorrectivoActualizada");
-
         this.mantenimientoCorrectivoId = mantenimientoCorrectivoId;
         this.descripcionDeMantenimientoCorrectivo = descripcionDeMantenimientoCorrectivo;
     }
