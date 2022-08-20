@@ -23,6 +23,7 @@ class CrearMantenimientoUseCaseTest {
     public void crearMantenimientoHappyPass(){
         //arrange
         var command= new CrearMantenimiento(MantenimientoId.of("M001"),new Herramientas("Multimetro"));
+        //act
         var events = UseCaseHandler.getInstance()
                 .syncExecutor(useCase, new RequestCommand<>(command))
                 .orElseThrow()

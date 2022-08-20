@@ -55,12 +55,13 @@ class AgregarMantenimientoPreventivoUseCaseTest {
 
          when(repository.getEventsBy("xxx")).thenReturn(history());
          useCase.addRepository(repository);
-
+        //act
          var events = UseCaseHandler.getInstance()
                  .setIdentifyExecutor(command.getMantenimientoId().value())
                  .syncExecutor(useCase, new RequestCommand<>(command))
                  .orElseThrow()
                  .getDomainEvents();
+         //assert
          var event = (MantenimientoPreventivoAgregado)events.get(0);
          Assertions.assertEquals("aseo de maquina",event.getDescripcionDelMantenimiento().value());
      }
